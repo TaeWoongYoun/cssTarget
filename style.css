@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    background-color: aqua;
+}
+
+div{
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+}
+
+#click{
+    width: 0;
+    height: 0;
+}
+
+#click:target{
+    background-color: aquamarine;
+}
+
+.hello{
+    background-color: pink
+}
+
+#main{
+    display: none;
+}
+
+#main:target{
+    display: block;
+    background-color: lightsalmon;
+    border: 2px black solid;
+}
