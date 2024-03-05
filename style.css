@@ -6,40 +6,33 @@
 a{
     text-decoration: none;
     color: inherit;
+    display: block;
+    width: 60px;
+    height: 30px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    line-height: 30px;
 }
 
-button{
-    width: 200px;
-    height: 40px;
-    background-color: aqua;
-}
-
-div{
-    margin-top: 20px;
-    width: 100%;
-    height: 100px;
-    background-color: lightblue;
-}
-
-#click{
-    width: 0;
-    height: 0;
-}
-
-#click:target{
-    background-color: aquamarine;
-}
-
-.hello{
-    background-color: pink
-}
-
-#main{
+#modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: aliceblue;
+    border: 2px solid black;;
     display: none;
 }
 
-#main:target{
+#modal a{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#modal:target{
     display: block;
-    background-color: lightsalmon;
-    border: 2px black solid;
 }
